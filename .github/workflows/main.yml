@@ -15,4 +15,14 @@ jobs:
       - run: haxelib git haxeui-html5 https://github.com/haxeui/haxeui-html5.git
       - run: haxe html5.hxml
       - run: cp -a build/html5/. docs/
+      - name: Setup Pages
+        uses: actions/configure-pages@v5
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          # Upload entire repository
+          path: 'docs'
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
 
