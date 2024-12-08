@@ -11,6 +11,6 @@ jobs:
         uses: krdlab/setup-haxe@v1
         with:
           haxe-version: 4.3.6
-      - run: haxe --version
+      - run: haxelib git haxeui-core https://github.com/haxeui/haxeui-core.git
         
 
