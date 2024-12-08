@@ -1,6 +1,6 @@
 jobs:
   hashlink:
-    runs-on: windows-latest
+    on: push
     steps:
       - name: Fetch sources
         uses: actions/checkout@v2
