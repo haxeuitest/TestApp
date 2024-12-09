@@ -16,7 +16,7 @@ jobs:
           haxe-version: 4.3.6
       - run: haxelib git haxeui-core https://github.com/haxeui/haxeui-core.git
       - run: haxelib git haxeui-html5 https://github.com/haxeui/haxeui-html5.git
-      - run: haxelib git haxeui-html5 https://github.com/haxeui/haxeui-heaps
+      - run: haxelib git haxeui-heaps https://github.com/haxeui/haxeui-heaps
       - run: haxelib git heaps https://github.com/HeapsIO/heaps.git
       - run: haxe html5.hxml
       - run: cp -a build/html5/. docs/html5/
