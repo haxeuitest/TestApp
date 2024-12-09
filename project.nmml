@@ -10,7 +10,7 @@
     <source path="src" />
 
     <haxelib name="nme" />
-    <!--<haxelib name="actuate" />-->
+    <haxelib name="actuate" />
 
     <haxelib name="haxeui-core" />
     <haxelib name="haxeui-nme" />

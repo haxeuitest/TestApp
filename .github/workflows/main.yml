@@ -16,8 +16,13 @@ jobs:
           haxe-version: 4.3.6
       - run: haxelib git haxeui-core https://github.com/haxeui/haxeui-core.git
       - run: haxelib git haxeui-html5 https://github.com/haxeui/haxeui-html5.git
+      - run: haxelib git haxeui-html5 https://github.com/haxeui/haxeui-heaps
+      - run: haxelib git heaps https://github.com/HeapsIO/heaps.git
       - run: haxe html5.hxml
-      - run: cp -a build/html5/. docs/
+      - run: cp -a build/html5/. docs/html5/
+      - run: haxe heaps-js.hxml
+      - run: cp -a build/html5/. docs/heaps-js/
+      
       - name: Setup Pages
         uses: actions/configure-pages@v5
       - name: Upload artifact
