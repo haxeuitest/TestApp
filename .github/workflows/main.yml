@@ -21,7 +21,7 @@ jobs:
       - run: haxe html5.hxml
       - run: cp -a build/html5/. docs/html5/
       - run: haxe heaps-js.hxml
-      - run: cp -a build/html5/. docs/heaps-js/
+      - run: cp -a build/heaps/js/. docs/heaps-js/
       
       - name: Setup Pages
         uses: actions/configure-pages@v5
