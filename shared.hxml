@@ -4,4 +4,4 @@
 -lib haxeui-core
 
 
--D resourcesPath=assets
+-D resourcesPath=res
