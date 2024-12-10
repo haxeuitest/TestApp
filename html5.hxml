@@ -4,3 +4,4 @@ shared.hxml
 -lib haxeui-html5
 
 -js build/html5/Buttons.js
+--dce full

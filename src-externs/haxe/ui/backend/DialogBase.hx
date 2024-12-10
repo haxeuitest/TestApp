@@ -1,0 +1,68 @@
+// generated file
+package haxe.ui.backend;
+
+extern class DialogBase extends haxe.ui.containers.Box implements haxe.ui.extensions.Draggable {
+    public function new():Void;
+    public var modal:Bool;
+    public var autoCenterDialog:Bool;
+    public var buttons:haxe.ui.containers.dialogs.Dialog.DialogButton;
+    public var centerDialog:Bool;
+    public var button:haxe.ui.containers.dialogs.Dialog.DialogButton;
+    public var defaultButton:String;
+    public var dialogContainer:haxe.ui.containers.VBox;
+    public var dialogTitle:haxe.ui.containers.HBox;
+    public var dialogTitleLabel:haxe.ui.components.Label;
+    public var dialogCloseButton:haxe.ui.components.Image;
+    public var dialogContent:haxe.ui.containers.VBox;
+    public var dialogFooterContainer:haxe.ui.containers.Box;
+    public var dialogFooter:haxe.ui.containers.HBox;
+    public var destroyOnClose(get, set):Bool;
+    private function get_destroyOnClose():Bool;
+    private function set_destroyOnClose(value:Bool):Bool;
+    private function onSubmit(event:haxe.ui.events.UIEvent):Void;
+    private function onReady():Void;
+    public var dialogParent(get, set):haxe.ui.core.Component;
+    private function get_dialogParent():haxe.ui.core.Component;
+    private function set_dialogParent(value:haxe.ui.core.Component):haxe.ui.core.Component;
+    public function showDialog(?modal:Bool):Void;
+    private function set_left(value:Null<Float>):Null<Float>;
+    private function set_top(value:Null<Float>):Null<Float>;
+    public function show():Void;
+    private function createButtons():Void;
+    public var closable(get, set):Bool;
+    private function get_closable():Bool;
+    private function set_closable(value:Bool):Bool;
+    private function validateDialog(button:haxe.ui.containers.dialogs.Dialog.DialogButton, fn:Bool -> Void):Void;
+    public function hide():Void;
+    public function hideDialog(button:haxe.ui.containers.dialogs.Dialog.DialogButton):Void;
+    public var title(get, set):String;
+    private function get_title():String;
+    private function set_title(value:String):String;
+    public function addComponent(child:haxe.ui.core.Component):haxe.ui.core.Component;
+    public function validateComponentLayout():Bool;
+    private function onDestroy():Void;
+    private function onContentResize(e:haxe.ui.events.UIEvent):Void;
+    private function onFooterResize(e:haxe.ui.events.UIEvent):Void;
+    public function addFooterComponent(c:haxe.ui.core.Component):Void;
+    public function centerDialogComponent(dialog:haxe.ui.containers.dialogs.Dialog, ?validate:Bool):Void;
+    private function onFooterButtonClick(event:haxe.ui.events.MouseEvent):Void;
+    public var draggable(get, set):Bool;
+    private function get_draggable():Bool;
+    private function set_draggable(value:Bool):Bool;
+    public var dragInitiator(get, set):haxe.ui.core.Component;
+    private function get_dragInitiator():haxe.ui.core.Component;
+    private function set_dragInitiator(value:haxe.ui.core.Component):haxe.ui.core.Component;
+    public var dragOptions(get, set):haxe.ui.dragdrop.DragOptions;
+    private function get_dragOptions():haxe.ui.dragdrop.DragOptions;
+    private function set_dragOptions(value:haxe.ui.dragdrop.DragOptions):haxe.ui.dragdrop.DragOptions;
+    private function registerBehaviours():Void;
+    public function cloneComponent():haxe.ui.backend.DialogBase;
+    private function self():haxe.ui.backend.DialogBase;
+    public var onDragStart(null, set):haxe.ui.events.DragEvent -> Void;
+    private function set_onDragStart(value:haxe.ui.events.DragEvent -> Void):haxe.ui.events.DragEvent -> Void;
+    public var onDrag(null, set):haxe.ui.events.DragEvent -> Void;
+    private function set_onDrag(value:haxe.ui.events.DragEvent -> Void):haxe.ui.events.DragEvent -> Void;
+    public var onDragEnd(null, set):haxe.ui.events.DragEvent -> Void;
+    private function set_onDragEnd(value:haxe.ui.events.DragEvent -> Void):haxe.ui.events.DragEvent -> Void;
+}
+

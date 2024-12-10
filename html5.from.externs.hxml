@@ -1,0 +1,8 @@
+
+-cp src
+--class-path src-externs
+ButtonsView
+
+-js build/html5/Buttons.externs.js
+
+--dce full
