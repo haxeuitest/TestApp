@@ -11,4 +11,13 @@
 --macro include('haxe.ui.containers.dialogs')
 --macro include('haxe.ui.containers.menus')
 --macro include('haxe.ui.containers.properties')
+
 #to fix after compile I copied 
+#1. change haxe.ui.backend.ComponentBase.hx line 8 by changing
+#extern class ComponentBase extends haxe.ui.backend.ComponentSurface implements haxe.ui.core.IComponentContainer implements haxe.ui.core.IEventDispatcher implements haxe.ui.core.IClonable<haxe.ui.backend.ComponentBase> {
+#to
+#extern class ComponentBase extends haxe.ui.backend.ComponentSurface implements haxe.ui.core.IComponentContainer implements haxe.ui.core.IEventDispatcher<UIEvent> implements haxe.ui.core.IClonable<haxe.ui.backend.ComponentBase> {
+#and ADDING a new line 3
+#import haxe.ui.events.UIEvent;
+#2. copied haxe.ui.util.Color from git over extern
+#3. copied haxe.ui.validators.Validators.hx from git over extern
