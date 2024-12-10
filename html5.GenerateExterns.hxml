@@ -16,8 +16,7 @@
 #1. change haxe.ui.backend.ComponentBase.hx line 8 by changing
 #extern class ComponentBase extends haxe.ui.backend.ComponentSurface implements haxe.ui.core.IComponentContainer implements haxe.ui.core.IEventDispatcher implements haxe.ui.core.IClonable<haxe.ui.backend.ComponentBase> {
 #to
-#extern class ComponentBase extends haxe.ui.backend.ComponentSurface implements haxe.ui.core.IComponentContainer implements haxe.ui.core.IEventDispatcher<UIEvent> implements haxe.ui.core.IClonable<haxe.ui.backend.ComponentBase> {
-#and ADDING a new line 3
-#import haxe.ui.events.UIEvent;
+#extern class ComponentBase extends haxe.ui.backend.ComponentSurface implements haxe.ui.core.IComponentContainer implements haxe.ui.core.IEventDispatcher<haxe.ui.events.UIEvent> implements haxe.ui.core.IClonable<haxe.ui.backend.ComponentBase> {
+
 #2. copied haxe.ui.util.Color from git over extern
 #3. copied haxe.ui.validators.Validators.hx from git over extern

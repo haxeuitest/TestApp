@@ -1,11 +1,11 @@
 // generated file
 package haxe.ui.backend;
-import haxe.ui.events.UIEvent;
+
 @:build(haxe.ui.macros.Macros.buildBehaviours())
 @:autoBuild(haxe.ui.macros.Macros.buildBehaviours())
 @:build(haxe.ui.macros.Macros.build())
 @:autoBuild(haxe.ui.macros.Macros.build())
-extern class ComponentBase extends haxe.ui.backend.ComponentSurface implements haxe.ui.core.IComponentContainer implements haxe.ui.core.IEventDispatcher<UIEvent> implements haxe.ui.core.IClonable<haxe.ui.backend.ComponentBase> {
+extern class ComponentBase extends haxe.ui.backend.ComponentSurface implements haxe.ui.core.IComponentContainer implements haxe.ui.core.IEventDispatcher<haxe.ui.events.UIEvent> implements haxe.ui.core.IClonable<haxe.ui.backend.ComponentBase> {
     public function new():Void;
     private var behaviours:haxe.ui.behaviours.Behaviours;
     private function registerBehaviours():Void;
