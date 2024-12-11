@@ -4,5 +4,6 @@
 ButtonsView
 
 -js build/html5/Buttons.externs.js
-
+--debug
 --dce full
+
