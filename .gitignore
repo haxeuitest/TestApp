@@ -4,12 +4,12 @@ build/heaps/*
 !build/heaps/js
 build/heaps/js/*
 !build/heaps/js/index.html
-!build/heaps/js/index.modular.html
+!build/heaps/js/index.labels.html
 
 !build/html5
 build/html5/*
 !build/html5/index.html
-
+!build/html5/js/index.modular.html
 
 pippo/*
 !pippo/pluto

@@ -2,10 +2,10 @@ package ;
 
 import haxe.ui.containers.VBox;
 
-@:build(haxe.ui.macros.ComponentMacros.build("ButtonsView.xml"))
+@:build(haxe.ui.macros.ComponentMacros.build("labelsView.xml"))
 //@:xml("<vbox></vbox>")
 @:keep @:expose
-class ButtonsView extends VBox {
+class LabelsView extends VBox {
     public function new() {
         super();
     }

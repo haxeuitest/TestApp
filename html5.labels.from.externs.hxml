@@ -1,0 +1,9 @@
+
+-cp src
+--class-path src-externs
+LabelsView
+
+-js build/html5/Labels.externs.js
+--debug
+--dce full
+

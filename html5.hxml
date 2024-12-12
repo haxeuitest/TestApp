@@ -1,7 +1,13 @@
 shared.hxml
-
--lib haxeui-core
 -lib haxeui-html5
-
--js build/html5/Buttons.js
 --dce full
+
+--each
+
+--main Buttons
+-js build/html5/Buttons.js
+
+--next
+
+--main Labels
+-js build/html5/Labels.js

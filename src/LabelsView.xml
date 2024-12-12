@@ -1,0 +1,1427 @@
+<vbox style="padding: 5px;" width="100%" height="100%">
+	<style>
+
+		.label {
+		background-color:#A7C7E7;
+		background-opacity: .3; }
+
+		.label .icon {
+		background-color:black;
+		background-opacity: .2;
+		}
+
+	</style>
+	<tabview width="100%" height="100%">
+		<vbox text="only label" width="100%" height="100%">
+			<scrollview width="100%" height="100%">
+				<vbox>
+					<hbox style="spacing: 20px;">
+						<vbox>
+							<section-header text="fixed width only text" />
+							<hbox>
+								<vbox>
+									<label text="TEXT - LEFT" />
+									<label id="bt_onlylabel_tl_idef" text="pos-default" width="140"
+										textAlign="left" />
+									<label id="bt_onlylabel_tl_ir" text="right" width="140"
+										textAlign="left" />
+									<label id="bt_onlylabel_tl_ifr" text="far-right" width="140"
+										textAlign="left" />
+									<label id="bt_onlylabel_tl_icr" text="center-right" width="140"
+										textAlign="left" />
+									<label id="bt_onlylabel_tl_il" text="left" width="140"
+										textAlign="left" />
+									<label id="bt_onlylabel_tl_ifl" text="far-left" width="140"
+										textAlign="left" />
+									<label id="bt_onlylabel_tl_icl" text="center-left" width="140"
+										textAlign="left" />
+									<label id="bt_onlylabel_tl_itop" text="top" width="140"
+										textAlign="left" />
+									<label id="bt_onlylabel_tl_ibottom" text="bottom" width="140"
+										textAlign="left" />
+								</vbox>
+								<vbox>
+									<label text="TEXT - RIGHT" />
+									<label id="bt_onlylabel_tr_idef" text="pos-default" width="140"
+										textAlign="right" />
+									<label id="bt_onlylabel_tr_ir" text="right" width="140"
+										textAlign="right" />
+									<label id="bt_onlylabel_tr_ifr" text="far-right" width="140"
+										textAlign="right" />
+									<label id="bt_onlylabel_tr_icr" text="center-right" width="140"
+										textAlign="right" />
+									<label id="bt_onlylabel_tr_il" text="left" width="140"
+										textAlign="right" />
+									<label id="bt_onlylabel_tr_ifl" text="far-left" width="140"
+										textAlign="right" />
+									<label id="bt_onlylabel_tr_icl" text="center-left" width="140"
+										textAlign="right" />
+									<label id="bt_onlylabel_tr_itop" text="top" width="140"
+										textAlign="right" />
+									<label id="bt_onlylabel_tr_ibottom" text="bottom" width="140"
+										textAlign="right" />
+								</vbox>
+								<vbox>
+									<label text="TEXT - CENTER" />
+									<label id="bt_onlylabel_tc_idef" text="pos-default" width="140"
+										textAlign="center" />
+									<label id="bt_onlylabel_tc_ir" text="right" width="140"
+										textAlign="center" />
+									<label id="bt_onlylabel_tc_ifr" text="far-right" width="140"
+										textAlign="center" />
+									<label id="bt_onlylabel_tc_icr" text="center-right" width="140"
+										textAlign="center" />
+									<label id="bt_onlylabel_tc_il" text="left" width="140"
+										textAlign="center" />
+									<label id="bt_onlylabel_tc_ifl" text="far-left" width="140"
+										textAlign="center" />
+									<label id="bt_onlylabel_tc_icl" text="center-left" width="140"
+										textAlign="center" />
+									<label id="bt_onlylabel_tc_itop" text="top" width="140"
+										textAlign="center" />
+									<label id="bt_onlylabel_tc_ibottom" text="bottom" width="140"
+										textAlign="center" />
+								</vbox>
+								<vbox>
+									<label text="TEXT - DEFAULT" />
+									<label id="bt_onlylabel_td_idef" text="pos-default" width="140" />
+									<label id="bt_onlylabel_td_ir" text="right" width="140" />
+									<label id="bt_onlylabel_td_ifr" text="far-right" width="140" />
+									<label id="bt_onlylabel_td_icr" text="center-right" width="140" />
+									<label id="bt_onlylabel_td_il" text="left" width="140" />
+									<label id="bt_onlylabel_td_ifl" text="far-left" width="140" />
+									<label id="bt_onlylabel_td_icl" text="center-left" width="140" />
+									<label id="bt_onlylabel_td_itop" text="top" width="140" />
+									<label id="bt_onlylabel_td_ibottom" text="bottom" width="140" />
+								</vbox>
+							</hbox>
+						</vbox>
+					</hbox>
+				</vbox>
+
+			</scrollview>
+		</vbox>
+
+
+		<vbox text="multi-line only label" width="100%" height="100%">
+			<scrollview width="100%" height="100%">
+				<hbox style="spacing: 20px;">
+
+					<vbox>
+						<section-header text="fixed width only text" />
+						<hbox>
+							<vbox>
+								<label text="TEXT - LEFT" />
+								<label id="bt_multi_onlylabel_tl_idef"
+									text="icon-pos-default   /  icon-pos-default  /  icon-pos-default"
+									width="140" textAlign="left" />
+								<label id="bt_multi_onlylabel_tl_ir"
+									text="icon-right  /  icon-right / icon-right  /  icon-right"
+									width="140" textAlign="left" />
+								<label id="bt_multi_onlylabel_tl_ifr"
+									text="icon-far-right /  icon-far-right  /  icon-far-right"
+									width="140" textAlign="left" />
+								<label id="bt_multi_onlylabel_tl_icr"
+									text="icon-center-right  / icon-center-right  /  icon-center-right"
+									width="140" textAlign="left" />
+								<label id="bt_multi_onlylabel_tl_il"
+									text="icon-left  /  icon-left  /  icon-left  /  icon-left"
+									width="140" textAlign="left" />
+								<label id="bt_multi_onlylabel_tl_ifl"
+									text="icon-far-left   /  icon-far-left  /  icon-far-left"
+									width="140" textAlign="left" />
+								<label id="bt_multi_onlylabel_tl_icl"
+									text="icon-center-left  /  icon-center-left  /  icon-center-left"
+									width="140" textAlign="left" />
+								<label id="bt_multi_onlylabel_tl_itop"
+									text="icon-top  /  icon-top  /  icon-top  /  icon-top  /  icon-top"
+									width="140" textAlign="left" />
+								<label id="bt_multi_onlylabel_tl_ibottom"
+									text="icon-bottom  /  icon-bottom  /  icon-bottom" width="140"
+									textAlign="left" />
+							</vbox>
+							<vbox>
+								<label text="TEXT - RIGHT" />
+								<label id="bt_multi_onlylabel_tr_idef"
+									text="icon-pos-default   /  icon-pos-default  /  icon-pos-default"
+									width="140" textAlign="right" />
+								<label id="bt_multi_onlylabel_tr_ir"
+									text="icon-right  /  icon-right / icon-right  /  icon-right"
+									width="140" textAlign="right" />
+								<label id="bt_multi_onlylabel_tr_ifr"
+									text="icon-far-right /  icon-far-right  /  icon-far-right"
+									width="140" textAlign="right" />
+								<label id="bt_multi_onlylabel_tr_icr"
+									text="icon-center-right  / icon-center-right  /  icon-center-right"
+									width="140" textAlign="right" />
+								<label id="bt_multi_onlylabel_tr_il"
+									text="icon-left  /  icon-left  /  icon-left  /  icon-left"
+									width="140" textAlign="right" />
+								<label id="bt_multi_onlylabel_tr_ifl"
+									text="icon-far-left   /  icon-far-left  /  icon-far-left"
+									width="140" textAlign="right" />
+								<label id="bt_multi_onlylabel_tr_icl"
+									text="icon-center-left  /  icon-center-left  /  icon-center-left"
+									width="140" textAlign="right" />
+								<label id="bt_multi_onlylabel_tr_itop"
+									text="icon-top  /  icon-top  /  icon-top  /  icon-top  /  icon-top"
+									width="140" textAlign="right" />
+								<label id="bt_multi_onlylabel_tr_ibottom"
+									text="icon-bottom  /  icon-bottom  /  icon-bottom" width="140"
+									textAlign="right" />
+							</vbox>
+							<vbox>
+								<label text="TEXT - CENTER" />
+								<label id="bt_multi_onlylabel_tc_idef"
+									text="icon-pos-default   /  icon-pos-default  /  icon-pos-default"
+									width="140" textAlign="center" />
+								<label id="bt_multi_onlylabel_tc_ir"
+									text="icon-right  /  icon-right / icon-right  /  icon-right"
+									width="140" textAlign="center" />
+								<label id="bt_multi_onlylabel_tc_ifr"
+									text="icon-far-right /  icon-far-right  /  icon-far-right"
+									width="140" textAlign="center" />
+								<label id="bt_multi_onlylabel_tc_icr"
+									text="icon-center-right  / icon-center-right  /  icon-center-right"
+									width="140" textAlign="center" />
+								<label id="bt_multi_onlylabel_tc_il"
+									text="icon-left  /  icon-left  /  icon-left  /  icon-left"
+									width="140" textAlign="center" />
+								<label id="bt_multi_onlylabel_tc_ifl"
+									text="icon-far-left   /  icon-far-left  /  icon-far-left"
+									width="140" textAlign="center" />
+								<label id="bt_multi_onlylabel_tc_icl"
+									text="icon-center-left  /  icon-center-left  /  icon-center-left"
+									width="140" textAlign="center" />
+								<label id="bt_multi_onlylabel_tc_itop"
+									text="icon-top  /  icon-top  /  icon-top  /  icon-top  /  icon-top"
+									width="140" textAlign="center" />
+								<label id="bt_multi_onlylabel_tc_ibottom"
+									text="icon-bottom  /  icon-bottom  /  icon-bottom" width="140"
+									textAlign="center" />
+							</vbox>
+							<vbox>
+								<label text="TEXT - DEFAULT" />
+								<label id="bt_multi_onlylabel_td_idef"
+									text="icon-pos-default   /  icon-pos-default  /  icon-pos-default"
+									width="140" />
+								<label id="bt_multi_onlylabel_td_ir"
+									text="icon-right  /  icon-right / icon-right  /  icon-right"
+									width="140" />
+								<label id="bt_multi_onlylabel_td_ifr"
+									text="icon-far-right /  icon-far-right  /  icon-far-right"
+									width="140" />
+								<label id="bt_multi_onlylabel_td_icr"
+									text="icon-center-right  / icon-center-right  /  icon-center-right"
+									width="140" />
+								<label id="bt_multi_onlylabel_td_il"
+									text="icon-left  /  icon-left  /  icon-left  /  icon-left"
+									width="140" />
+								<label id="bt_multi_onlylabel_td_ifl"
+									text="icon-far-left   /  icon-far-left  /  icon-far-left"
+									width="140" />
+								<label id="bt_multi_onlylabel_td_icl"
+									text="icon-center-left  /  icon-center-left  /  icon-center-left"
+									width="140" />
+								<label id="bt_multi_onlylabel_td_itop"
+									text="icon-top  /  icon-top  /  icon-top  /  icon-top  /  icon-top"
+									width="140" />
+								<label id="bt_multi_onlylabel_td_ibottom"
+									text="icon-bottom  /  icon-bottom  /  icon-bottom" width="140" />
+							</vbox>
+							<vbox>
+								<label text="AUTO - DEFAULT" />
+								<label id="bt_multi_onlylabel_tad_idef"
+									text="icon-pos-default  /\n  icon-pos-default  /\n  icon-pos-default" />
+								<label id="bt_multi_onlylabel_tad_ir"
+									text="icon-right  /\n  icon-right / icon-right  /\n  icon-right" />
+								<label id="bt_multi_onlylabel_tad_ifr"
+									text="icon-far-right /  icon-far-right  /\n  icon-far-right" />
+								<label id="bt_multi_onlylabel_tad_icr"
+									text="icon-center-right  /\n icon-center-right  /\n  icon-center-right" />
+								<label id="bt_multi_onlylabel_tad_il"
+									text="icon-left  /\n  icon-left  /\n  icon-left  /\n  icon-left" />
+								<label id="bt_multi_onlylabel_tad_ifl"
+									text="icon-far-left   /\n  icon-far-left  /\n  icon-far-left" />
+								<label id="bt_multi_onlylabel_tad_icl"
+									text="icon-center-left  /\n  icon-center-left  /\n  icon-center-left" />
+								<label id="bt_multi_onlylabel_tad_itop"
+									text="icon-top  /\n  icon-top  /\n  icon-top  /\n  icon-top  /\n  icon-top" />
+								<label id="bt_multi_onlylabel_tad_ibottom"
+									text="icon-bottom  /\n  icon-bottom  /\n  icon-bottom" />
+							</vbox>
+						</hbox>
+					</vbox>
+
+
+					
+				</hbox>
+			</scrollview>
+		</vbox>
+
+
+		<vbox text="dynamic witdh" width="100%" height="100%">
+			<vbox width="100%" height="100%">
+				<splitter direction="horizontal" width="100%" height="100%" verticalAlign="center"
+					horizontalAlign="center">
+
+					<vbox width="100%" height="100%">
+						<scrollview width="100%" height="100%" contentWidth="100%">
+
+							<section-header text="dynamic width" />
+							<hbox width="100%">
+								<vbox width="100%">
+									<label text="TEXT - LEFT" />
+									<label id="bt_tl_idef" text="text-left / icon-pos-default"
+										width="100%" textAlign="left" />
+									<label id="bt_tl_ir" text="text-left / icon-right" width="100%"
+										textAlign="left" />
+									<label id="bt_tl_ifr" text="text-left / icon-far-right"
+										width="100%" textAlign="left" />
+									<label id="bt_tl_icr" text="text-left / icon-center-right"
+										width="100%" textAlign="left" />
+									<label id="bt_tl_il" text="text-left / icon-left" width="100%"
+										textAlign="left" />
+									<label id="bt_tl_ifl" text="text-left / icon-far-left"
+										width="100%" textAlign="left" />
+									<label id="bt_tl_icl" text="text-left / icon-center-left"
+										width="100%" textAlign="left" />
+									<label id="bt_tl_itop" text="text-left / icon-top" width="100%"
+										textAlign="left" />
+									<label id="bt_tl_ibottom" text="text-left / icon-bottom"
+										width="100%" textAlign="left" />
+								</vbox>
+								<vbox width="100%">
+									<label text="TEXT - RIGHT" />
+									<label id="bt_tr_idef" text="text-right / icon-pos-default"
+										width="100%" textAlign="right" />
+									<label id="bt_tr_ir" text="text-right / icon-right" width="100%"
+										textAlign="right" />
+									<label id="bt_tr_ifr" text="text-right / icon-far-right"
+										width="100%" textAlign="right" />
+									<label id="bt_tr_icr" text="text-right / icon-center-right"
+										width="100%" textAlign="right" />
+									<label id="bt_tr_il" text="text-right / icon-left" width="100%"
+										textAlign="right" />
+									<label id="bt_tr_ifl" text="text-right / icon-far-left"
+										width="100%" textAlign="right" />
+									<label id="bt_tr_icl" text="text-right / icon-center-left"
+										width="100%" textAlign="right" />
+									<label id="bt_tr_itop" text="text-right / icon-top" width="100%"
+										textAlign="right" />
+									<label id="bt_tr_ibottom" text="text-right / icon-bottom"
+										width="100%" textAlign="right" />
+								</vbox>
+								<vbox width="100%">
+									<label text="TEXT - CENTER" />
+									<label id="bt_tc_idef" text="text-center / icon-pos-default"
+										width="100%" textAlign="center" />
+									<label id="bt_tc_ir" text="text-center / icon-right"
+										width="100%" textAlign="center" />
+									<label id="bt_tc_ifr" text="text-center / icon-far-right"
+										width="100%" textAlign="center" />
+									<label id="bt_tc_icr" text="text-center / icon-center-right"
+										width="100%" textAlign="center" />
+									<label id="bt_tc_il" text="text-center / icon-left" width="100%"
+										textAlign="center" />
+									<label id="bt_tc_ifl" text="text-center / icon-far-left"
+										width="100%" textAlign="center" />
+									<label id="bt_tc_icl" text="text-center / icon-center-left"
+										width="100%" textAlign="center" />
+									<label id="bt_tc_itop" text="text-center / icon-top"
+										width="100%" textAlign="center" />
+									<label id="bt_tc_ibottom" text="text-center / icon-bottom"
+										width="100%" textAlign="center" />
+								</vbox>
+								<vbox width="100%">
+									<label text="TEXT - DEFAULT" />
+									<label id="bt_td_idef" text="text-default / icon-pos-default"
+										width="100%" />
+									<label id="bt_td_ir" text="text-default / icon-right"
+										width="100%" />
+									<label id="bt_td_ifr" text="text-default / icon-far-right"
+										width="100%" />
+									<label id="bt_td_icr" text="text-default / icon-center-right"
+										width="100%" />
+									<label id="bt_td_il" text="text-default / icon-left"
+										width="100%" />
+									<label id="bt_td_ifl" text="text-default / icon-far-left"
+										width="100%" />
+									<label id="bt_td_icl" text="text-default / icon-center-left"
+										width="100%" />
+									<label id="bt_td_itop" text="text-default / icon-top"
+										width="100%" />
+									<label id="bt_td_ibottom" text="text-default / icon-bottom"
+										width="100%" />
+								</vbox>
+							</hbox>
+						</scrollview>
+
+					</vbox>
+
+					<box width="100%" height="100%"
+						style="background-color: #FFAAAA;background-opacity:.3;clip:true;">
+					</box>
+				</splitter>
+
+
+			</vbox>
+		</vbox>
+
+
+		<vbox text="dropdowns" width="100%" height="100%">
+			<scrollview width="100%" height="100%">
+				<hbox style="spacing: 20px;">
+					<vbox>
+						<section-header text="dropdown fixed width text and icon(arrow)" />
+						<hbox>
+							<vbox>
+								<label text="TEXT - LEFT" />
+								<dropdown id="dd_tl_idef" text="pos-default" width="250"
+									textAlign="left">
+									<data>
+										<item text="Item 1" />
+										<item text="Item 2" />
+										<item text="Item 3" />
+										<item text="Item 4" />
+									</data>
+								</dropdown>
+								<dropdown id="dd_tl_ir" text="right" width="250" textAlign="left">
+									<data>
+										<item text="Item 1" />
+										<item text="Item 2" />
+										<item text="Item 3" />
+										<item text="Item 4" />
+									</data>
+								</dropdown>
+								<dropdown id="dd_tl_ifr" text="far-right" width="250"
+									textAlign="left">
+									<data>
+										<item text="Item 1" />
+										<item text="Item 2" />
+										<item text="Item 3" />
+										<item text="Item 4" />
+									</data>
+								</dropdown>
+								<dropdown id="dd_tl_icr" text="center-right" width="250"
+									textAlign="left">
+									<data>
+										<item text="Item 1" />
+										<item text="Item 2" />
+										<item text="Item 3" />
+										<item text="Item 4" />
+									</data>
+								</dropdown>
+								<dropdown id="dd_tl_il" text="left" width="250" textAlign="left">
+									<data>
+										<item text="Item 1" />
+										<item text="Item 2" />
+										<item text="Item 3" />
+										<item text="Item 4" />
+									</data>
+								</dropdown>
+								<dropdown id="dd_tl_ifl" text="far-left" width="250"
+									textAlign="left">
+									<data>
+										<item text="Item 1" />
+										<item text="Item 2" />
+										<item text="Item 3" />
+										<item text="Item 4" />
+									</data>
+								</dropdown>
+								<dropdown id="dd_tl_icl" text="center-left" width="250"
+									textAlign="left">
+									<data>
+										<item text="Item 1" />
+										<item text="Item 2" />
+										<item text="Item 3" />
+										<item text="Item 4" />
+									</data>
+								</dropdown>
+								<dropdown id="dd_tl_itop" text="top" width="250" textAlign="left">
+									<data>
+										<item text="Item 1" />
+										<item text="Item 2" />
+										<item text="Item 3" />
+										<item text="Item 4" />
+									</data>
+								</dropdown>
+								<dropdown id="dd_tl_ibottom" text="bottom" width="250"
+									textAlign="left">
+									<data>
+										<item text="Item 1" />
+										<item text="Item 2" />
+										<item text="Item 3" />
+										<item text="Item 4" />
+									</data>
+								</dropdown>
+							</vbox>
+							<vbox>
+								<label text="TEXT - RIGHT" />
+								<dropdown id="dd_tr_idef" text="pos-default" width="250"
+									textAlign="right">
+									<data>
+										<item text="Item 1" />
+										<item text="Item 2" />
+										<item text="Item 3" />
+										<item text="Item 4" />
+									</data>
+								</dropdown>
+								<dropdown id="dd_tr_ir" text="right" width="250" textAlign="right">
+									<data>
+										<item text="Item 1" />
+										<item text="Item 2" />
+										<item text="Item 3" />
+										<item text="Item 4" />
+									</data>
+								</dropdown>
+								<dropdown id="dd_tr_ifr" text="far-right" width="250"
+									textAlign="right">
+									<data>
+										<item text="Item 1" />
+										<item text="Item 2" />
+										<item text="Item 3" />
+										<item text="Item 4" />
+									</data>
+								</dropdown>
+								<dropdown id="dd_tr_icr" text="center-right" width="250"
+									textAlign="right">
+									<data>
+										<item text="Item 1" />
+										<item text="Item 2" />
+										<item text="Item 3" />
+										<item text="Item 4" />
+									</data>
+								</dropdown>
+								<dropdown id="dd_tr_il" text="left" width="250" textAlign="right">
+									<data>
+										<item text="Item 1" />
+										<item text="Item 2" />
+										<item text="Item 3" />
+										<item text="Item 4" />
+									</data>
+								</dropdown>
+								<dropdown id="dd_tr_ifl" text="far-left" width="250"
+									textAlign="right">
+									<data>
+										<item text="Item 1" />
+										<item text="Item 2" />
+										<item text="Item 3" />
+										<item text="Item 4" />
+									</data>
+								</dropdown>
+								<dropdown id="dd_tr_icl" text="center-left" width="250"
+									textAlign="right">
+									<data>
+										<item text="Item 1" />
+										<item text="Item 2" />
+										<item text="Item 3" />
+										<item text="Item 4" />
+									</data>
+								</dropdown>
+								<dropdown id="dd_tr_itop" text="top" width="250" textAlign="right">
+									<data>
+										<item text="Item 1" />
+										<item text="Item 2" />
+										<item text="Item 3" />
+										<item text="Item 4" />
+									</data>
+								</dropdown>
+								<dropdown id="dd_tr_ibottom" text="bottom" width="250"
+									textAlign="right">
+									<data>
+										<item text="Item 1" />
+										<item text="Item 2" />
+										<item text="Item 3" />
+										<item text="Item 4" />
+									</data>
+								</dropdown>
+							</vbox>
+							<vbox>
+								<label text="TEXT - CENTER" />
+								<dropdown id="dd_tc_idef" text="pos-default" width="250"
+									textAlign="center">
+									<data>
+										<item text="Item 1" />
+										<item text="Item 2" />
+										<item text="Item 3" />
+										<item text="Item 4" />
+									</data>
+								</dropdown>
+								<dropdown id="dd_tc_ir" text="right" width="250" textAlign="center">
+									<data>
+										<item text="Item 1" />
+										<item text="Item 2" />
+										<item text="Item 3" />
+										<item text="Item 4" />
+									</data>
+								</dropdown>
+								<dropdown id="dd_tc_ifr" text="far-right" width="250"
+									textAlign="center">
+									<data>
+										<item text="Item 1" />
+										<item text="Item 2" />
+										<item text="Item 3" />
+										<item text="Item 4" />
+									</data>
+								</dropdown>
+								<dropdown id="dd_tc_icr" text="center-right" width="250"
+									textAlign="center">
+									<data>
+										<item text="Item 1" />
+										<item text="Item 2" />
+										<item text="Item 3" />
+										<item text="Item 4" />
+									</data>
+								</dropdown>
+								<dropdown id="dd_tc_il" text="left" width="250" textAlign="center">
+									<data>
+										<item text="Item 1" />
+										<item text="Item 2" />
+										<item text="Item 3" />
+										<item text="Item 4" />
+									</data>
+								</dropdown>
+								<dropdown id="dd_tc_ifl" text="far-left" width="250"
+									textAlign="center">
+									<data>
+										<item text="Item 1" />
+										<item text="Item 2" />
+										<item text="Item 3" />
+										<item text="Item 4" />
+									</data>
+								</dropdown>
+								<dropdown id="dd_tc_icl" text="center-left" width="250"
+									textAlign="center">
+									<data>
+										<item text="Item 1" />
+										<item text="Item 2" />
+										<item text="Item 3" />
+										<item text="Item 4" />
+									</data>
+								</dropdown>
+								<dropdown id="dd_tc_itop" text="top" width="250" textAlign="center">
+									<data>
+										<item text="Item 1" />
+										<item text="Item 2" />
+										<item text="Item 3" />
+										<item text="Item 4" />
+									</data>
+								</dropdown>
+								<dropdown id="dd_tc_ibottom" text="bottom" width="250"
+									textAlign="center">
+									<data>
+										<item text="Item 1" />
+										<item text="Item 2" />
+										<item text="Item 3" />
+										<item text="Item 4" />
+									</data>
+								</dropdown>
+							</vbox>
+							<vbox>
+								<label text="TEXT - DEFAULT" />
+								<dropdown id="dd_td_idef" text="pos-default" width="250"
+									icon="haxeui-core/styles/default/haxeui_small.png">
+									<data>
+										<item text="Item 1" />
+										<item text="Item 2" />
+										<item text="Item 3" />
+										<item text="Item 4" />
+									</data>
+								</dropdown>
+								<dropdown id="dd_td_ir" text="right" width="250">
+									<data>
+										<item text="Item 1" />
+										<item text="Item 2" />
+										<item text="Item 3" />
+										<item text="Item 4" />
+									</data>
+								</dropdown>
+								<dropdown id="dd_td_ifr" text="far-right" width="250">
+									<data>
+										<item text="Item 1" />
+										<item text="Item 2" />
+										<item text="Item 3" />
+										<item text="Item 4" />
+									</data>
+								</dropdown>
+								<dropdown id="dd_td_icr" text="center-right" width="250">
+									<data>
+										<item text="Item 1" />
+										<item text="Item 2" />
+										<item text="Item 3" />
+										<item text="Item 4" />
+									</data>
+								</dropdown>
+								<dropdown id="dd_td_il" text="left" width="250"
+									icon="haxeui-core/styles/default/haxeui_small.png">
+									<data>
+										<item text="Item 1" />
+										<item text="Item 2" />
+										<item text="Item 3" />
+										<item text="Item 4" />
+									</data>
+								</dropdown>
+								<dropdown id="dd_td_ifl" text="far-left" width="250"
+									iconPosition="far-left">
+									<data>
+										<item text="Item 1" />
+										<item text="Item 2" />
+										<item text="Item 3" />
+										<item text="Item 4" />
+									</data>
+								</dropdown>
+								<dropdown id="dd_td_icl" text="center-left" width="250">
+									<data>
+										<item text="Item 1" />
+										<item text="Item 2" />
+										<item text="Item 3" />
+										<item text="Item 4" />
+									</data>
+								</dropdown>
+								<dropdown id="dd_td_itop" text="top" width="250" iconPosition="top">
+									<data>
+										<item text="Item 1" />
+										<item text="Item 2" />
+										<item text="Item 3" />
+										<item text="Item 4" />
+									</data>
+								</dropdown>
+								<dropdown id="dd_td_ibottom" text="bottom" width="250"
+									iconPosition="bottom">
+									<data>
+										<item text="Item 1" />
+										<item text="Item 2" />
+										<item text="Item 3" />
+										<item text="Item 4" />
+									</data>
+								</dropdown>
+							</vbox>
+						</hbox>
+
+						<section-header text="dropdown auto width text and icon(arrow)" />
+						<hbox>
+							<vbox>
+								<label text="TEXT AUTO - LEFT" />
+								<dropdown id="dd_tal_idef" text="pos-default" textAlign="left">
+									<data>
+										<item text="Item 1" />
+										<item text="Item 2" />
+										<item text="Item 3" />
+										<item text="Item 4" />
+									</data>
+								</dropdown>
+								<dropdown id="dd_tal_ir" text="right" textAlign="left">
+									<data>
+										<item text="Item 1" />
+										<item text="Item 2" />
+										<item text="Item 3" />
+										<item text="Item 4" />
+									</data>
+								</dropdown>
+								<dropdown id="dd_tal_ifr" text="far-right" textAlign="left">
+									<data>
+										<item text="Item 1" />
+										<item text="Item 2" />
+										<item text="Item 3" />
+										<item text="Item 4" />
+									</data>
+								</dropdown>
+								<dropdown id="dd_tal_icr" text="center-right" textAlign="left">
+									<data>
+										<item text="Item 1" />
+										<item text="Item 2" />
+										<item text="Item 3" />
+										<item text="Item 4" />
+									</data>
+								</dropdown>
+								<dropdown id="dd_tal_il" text="left" textAlign="left">
+									<data>
+										<item text="Item 1" />
+										<item text="Item 2" />
+										<item text="Item 3" />
+										<item text="Item 4" />
+									</data>
+								</dropdown>
+								<dropdown id="dd_tal_ifl" text="far-left" textAlign="left">
+									<data>
+										<item text="Item 1" />
+										<item text="Item 2" />
+										<item text="Item 3" />
+										<item text="Item 4" />
+									</data>
+								</dropdown>
+								<dropdown id="dd_tal_icl" text="center-left" textAlign="left">
+									<data>
+										<item text="Item 1" />
+										<item text="Item 2" />
+										<item text="Item 3" />
+										<item text="Item 4" />
+									</data>
+								</dropdown>
+								<dropdown id="dd_tal_itop" text="top" textAlign="left">
+									<data>
+										<item text="Item 1" />
+										<item text="Item 2" />
+										<item text="Item 3" />
+										<item text="Item 4" />
+									</data>
+								</dropdown>
+								<dropdown id="dd_tal_ibottom" text="bottom" textAlign="left">
+									<data>
+										<item text="Item 1" />
+										<item text="Item 2" />
+										<item text="Item 3" />
+										<item text="Item 4" />
+									</data>
+								</dropdown>
+							</vbox>
+							<vbox>
+								<label text="TEXT AUTO - RIGHT" />
+								<dropdown id="dd_tar_idef" text="pos-default" textAlign="right">
+									<data>
+										<item text="Item 1" />
+										<item text="Item 2" />
+										<item text="Item 3" />
+										<item text="Item 4" />
+									</data>
+								</dropdown>
+								<dropdown id="dd_tar_ir" text="right" textAlign="right">
+									<data>
+										<item text="Item 1" />
+										<item text="Item 2" />
+										<item text="Item 3" />
+										<item text="Item 4" />
+									</data>
+								</dropdown>
+								<dropdown id="dd_tar_ifr" text="far-right" textAlign="right">
+									<data>
+										<item text="Item 1" />
+										<item text="Item 2" />
+										<item text="Item 3" />
+										<item text="Item 4" />
+									</data>
+								</dropdown>
+								<dropdown id="dd_tar_icr" text="center-right" textAlign="right">
+									<data>
+										<item text="Item 1" />
+										<item text="Item 2" />
+										<item text="Item 3" />
+										<item text="Item 4" />
+									</data>
+								</dropdown>
+								<dropdown id="dd_tar_il" text="left" textAlign="right">
+									<data>
+										<item text="Item 1" />
+										<item text="Item 2" />
+										<item text="Item 3" />
+										<item text="Item 4" />
+									</data>
+								</dropdown>
+								<dropdown id="dd_tar_ifl" text="far-left" textAlign="right">
+									<data>
+										<item text="Item 1" />
+										<item text="Item 2" />
+										<item text="Item 3" />
+										<item text="Item 4" />
+									</data>
+								</dropdown>
+								<dropdown id="dd_tar_icl" text="center-left" textAlign="right">
+									<data>
+										<item text="Item 1" />
+										<item text="Item 2" />
+										<item text="Item 3" />
+										<item text="Item 4" />
+									</data>
+								</dropdown>
+								<dropdown id="dd_tar_itop" text="top" textAlign="right">
+									<data>
+										<item text="Item 1" />
+										<item text="Item 2" />
+										<item text="Item 3" />
+										<item text="Item 4" />
+									</data>
+								</dropdown>
+								<dropdown id="dd_tar_ibottom" text="bottom" textAlign="right">
+									<data>
+										<item text="Item 1" />
+										<item text="Item 2" />
+										<item text="Item 3" />
+										<item text="Item 4" />
+									</data>
+								</dropdown>
+							</vbox>
+							<vbox>
+								<label text="TEXT AUTO - CENTER" />
+								<dropdown id="dd_tac_idef" text="pos-default" textAlign="center">
+									<data>
+										<item text="Item 1" />
+										<item text="Item 2" />
+										<item text="Item 3" />
+										<item text="Item 4" />
+									</data>
+								</dropdown>
+								<dropdown id="dd_tac_ir" text="right" textAlign="center">
+									<data>
+										<item text="Item 1" />
+										<item text="Item 2" />
+										<item text="Item 3" />
+										<item text="Item 4" />
+									</data>
+								</dropdown>
+								<dropdown id="dd_tac_ifr" text="far-right" textAlign="center">
+									<data>
+										<item text="Item 1" />
+										<item text="Item 2" />
+										<item text="Item 3" />
+										<item text="Item 4" />
+									</data>
+								</dropdown>
+								<dropdown id="dd_tac_icr" text="center-right" textAlign="center">
+									<data>
+										<item text="Item 1" />
+										<item text="Item 2" />
+										<item text="Item 3" />
+										<item text="Item 4" />
+									</data>
+								</dropdown>
+								<dropdown id="dd_tac_il" text="left" textAlign="center">
+									<data>
+										<item text="Item 1" />
+										<item text="Item 2" />
+										<item text="Item 3" />
+										<item text="Item 4" />
+									</data>
+								</dropdown>
+								<dropdown id="dd_tac_ifl" text="far-left" textAlign="center">
+									<data>
+										<item text="Item 1" />
+										<item text="Item 2" />
+										<item text="Item 3" />
+										<item text="Item 4" />
+									</data>
+								</dropdown>
+								<dropdown id="dd_tac_icl" text="center-left" textAlign="center">
+									<data>
+										<item text="Item 1" />
+										<item text="Item 2" />
+										<item text="Item 3" />
+										<item text="Item 4" />
+									</data>
+								</dropdown>
+								<dropdown id="dd_tac_itop" text="top" textAlign="center">
+									<data>
+										<item text="Item 1" />
+										<item text="Item 2" />
+										<item text="Item 3" />
+										<item text="Item 4" />
+									</data>
+								</dropdown>
+								<dropdown id="dd_tac_ibottom" text="bottom" textAlign="center">
+									<data>
+										<item text="Item 1" />
+										<item text="Item 2" />
+										<item text="Item 3" />
+										<item text="Item 4" />
+									</data>
+								</dropdown>
+							</vbox>
+
+
+							<vbox>
+								<label text="TEXT AUTO - DEFAULT" />
+								<dropdown id="dd_tad_idef" text="pos-default"
+									icon="haxeui-core/styles/default/haxeui_small.png">
+									<data>
+										<item text="Item 1" />
+										<item text="Item 2" />
+										<item text="Item 3" />
+										<item text="Item 4" />
+									</data>
+								</dropdown>
+								<dropdown id="dd_tad_ir" text="right">
+									<data>
+										<item text="Item 1" />
+										<item text="Item 2" />
+										<item text="Item 3" />
+										<item text="Item 4" />
+									</data>
+								</dropdown>
+								<dropdown id="dd_tad_ifr" text="far-right">
+									<data>
+										<item text="Item 1" />
+										<item text="Item 2" />
+										<item text="Item 3" />
+										<item text="Item 4" />
+									</data>
+								</dropdown>
+								<dropdown id="dd_tad_icr" text="center-right">
+									<data>
+										<item text="Item 1" />
+										<item text="Item 2" />
+										<item text="Item 3" />
+										<item text="Item 4" />
+									</data>
+								</dropdown>
+								<dropdown id="dd_tad_il" text="left"
+									icon="haxeui-core/styles/default/haxeui_small.png">
+									<data>
+										<item text="Item 1" />
+										<item text="Item 2" />
+										<item text="Item 3" />
+										<item text="Item 4" />
+									</data>
+								</dropdown>
+								<dropdown id="dd_tad_ifl" text="far-left" iconPosition="far-left">
+									<data>
+										<item text="Item 1" />
+										<item text="Item 2" />
+										<item text="Item 3" />
+										<item text="Item 4" />
+									</data>
+								</dropdown>
+								<dropdown id="dd_tad_icl" text="center-left">
+									<data>
+										<item text="Item 1" />
+										<item text="Item 2" />
+										<item text="Item 3" />
+										<item text="Item 4" />
+									</data>
+								</dropdown>
+								<dropdown id="dd_tad_itop" text="top" iconPosition="top">
+									<data>
+										<item text="Item 1" />
+										<item text="Item 2" />
+										<item text="Item 3" />
+										<item text="Item 4" />
+									</data>
+								</dropdown>
+								<dropdown id="dd_tad_ibottom" text="bottom" iconPosition="bottom">
+									<data>
+										<item text="Item 1" />
+										<item text="Item 2" />
+										<item text="Item 3" />
+										<item text="Item 4" />
+									</data>
+								</dropdown>
+							</vbox>
+						</hbox>
+
+
+					</vbox>
+				</hbox>
+			</scrollview>
+		</vbox>
+
+
+		<vbox text="other components" width="100%" height="100%">
+			<scrollview width="100%" height="100%">
+				<hbox style="spacing: 20px;">
+					<vbox>
+						<section-header text="components that use labels" />
+						<hbox>
+							<vbox>
+								<tableview id="tv1" width="500" height="200" contentWidth="100%">
+									<header width="100%">
+										<column id="colA" text="T-left I-right" width="100%"
+											sortable="true" style="icon-position:right;" />
+										<column id="colB" text="T-center I-right" width="100%"
+											sortable="true"
+											style="icon-position:right; text-align: center;" />
+										<column id="colC" text="T-right I-right" width="100%"
+											sortable="true"
+											style="icon-position:right; text-align: right;" />
+									</header>
+
+									<data>
+										<item colA="A1" colB="B1" colC="C1" />
+										<item colA="A2" colB="B2" colC="C2" />
+										<item colA="A3" colB="B3" colC="C3" />
+										<item colA="A4" colB="B4" colC="C4" />
+										<item colA="A5" colB="B5" colC="C5" />
+										<item colA="A6" colB="B6" colC="C6" />
+										<item colA="A7" colB="B7" colC="C7" />
+										<item colA="A8" colB="B8" colC="C8" />
+										<item colA="A9" colB="B9" colC="C9" />
+									</data>
+								</tableview>
+								<button-bar selectedIndex="4" width="500">
+									<label text="Item 1111111111111" width="100%" />
+									<label text="Item 2222222222222" width="100%" />
+									<label text="Item 3333333333333" disabled="true" width="100%" />
+									<label text="Item 4444444444444" width="100%" />
+									<label text="Item 5555555555555" width="100%" />
+								</button-bar>
+
+								<button-bar selectedIndex="3" width="500">
+									<label text="Item 1111111111111" width="100%" />
+									<label text="Item 2222222222222" width="100%" />
+									<label text="Item 3333333333333" disabled="true" width="100%" />
+									<label text="Item 4444444444444" width="100%" />
+									<label text="Item 5555555555555" width="100%" />
+								</button-bar>
+								<tabview id="tv5" width="400" closable="true">
+									<box text="Haxe"
+										icon="haxeui-core/styles/default/haxeui_tiny.png" />
+									<box text="Java"
+										icon="haxeui-core/styles/default/haxeui_tiny.png" />
+									<box text="Javascript"
+										icon="haxeui-core/styles/default/haxeui_tiny.png"
+										disabled="true" />
+									<box text="C++"
+										icon="haxeui-core/styles/default/haxeui_tiny.png" />
+									<box text="PHP"
+										icon="haxeui-core/styles/default/haxeui_tiny.png" />
+									<box text="C#" icon="haxeui-core/styles/default/haxeui_tiny.png" />
+									<box text="F#" icon="haxeui-core/styles/default/haxeui_tiny.png" />
+									<box text="OCaml"
+										icon="haxeui-core/styles/default/haxeui_tiny.png" />
+									<box text="Assembler"
+										icon="haxeui-core/styles/default/haxeui_tiny.png" />
+								</tabview>
+							</vbox>
+							<hbox>
+								<button-bar selectedIndex="4" width="100" direction="vertical">
+									<label text="Item 1111111111111" width="100%" />
+									<label text="Item 2222222222222" width="100%" />
+									<label text="Item 3333333333333" disabled="true" width="100%" />
+									<label text="Item 4444444444444" width="100%" />
+									<label text="Item 5555555555555" width="100%" />
+								</button-bar>
+
+								<button-bar selectedIndex="3" width="100" direction="vertical">
+									<label text="Item 1111111111111" width="100%" />
+									<label text="Item 2222222222222" width="100%" />
+									<label text="Item 3333333333333" disabled="true" width="100%" />
+									<label text="Item 4444444444444" width="100%" />
+									<label text="Item 5555555555555" width="100%" />
+								</button-bar>
+							</hbox>
+							<vbox>
+								<color-picker-popup id="picker1" />
+								<color-picker id="picker4" />
+							</vbox>
+							<vbox>
+								<dropdown text="Select Date" type="date" />
+								<calendarview />
+								<month-stepper width="180" />
+							</vbox>
+
+
+						</hbox>
+
+					</vbox>
+				</hbox>
+			</scrollview>
+		</vbox>
+
+
+		<vbox text="dynamic witdh other components" width="100%" height="100%">
+			<vbox width="100%" height="100%">
+				<splitter direction="horizontal" width="100%" height="100%" verticalAlign="center"
+					horizontalAlign="center">
+
+					<vbox width="100%" height="100%">
+						<scrollview width="100%" height="100%" contentWidth="100%">
+							<section-header text="button bar" />
+							<hbox width="100%">
+								<button-bar selectedIndex="4" width="100%">
+									<label text="Item 1111111111111" width="100%" />
+									<label text="Item 2222222222222" width="100%" />
+									<label text="Item 3333333333333" disabled="true" width="100%" />
+									<label text="Item 4444444444444" width="100%" />
+									<label text="Item 5555555555555" width="100%" />
+								</button-bar>
+								<button-bar selectedIndex="3" width="100%">
+									<label text="Item 1111111111111" width="100%" />
+									<label text="Item 2222222222222" width="100%" />
+									<label text="Item 3333333333333" disabled="true" width="100%" />
+									<label text="Item 4444444444444" width="100%" />
+									<label text="Item 5555555555555" width="100%" />
+								</button-bar>
+							</hbox>
+
+							<section-header text="table view" />
+							<tableview id="tv1" width="100%" height="140" contentWidth="100%">
+								<header width="100%">
+									<column id="colA" text="T-default I-right" width="100%"
+										sortable="true" style="icon-position:right;" />
+									<column id="colB" text="T-default I-center" width="100%"
+										sortable="true" style="icon-position:center;" />
+									<column id="colC" text="T-default I-left" width="100%"
+										sortable="true" style="icon-position:left;" />
+									<column id="colD" text="T-default I-far-right" width="100%"
+										sortable="true" style="icon-position:far-right;" />
+									<column id="colE" text="T-default I-center-righ" width="100%"
+										sortable="true" style="icon-position:center-right;" />
+									<column id="colF" text="T-default I-far-left" width="100%"
+										sortable="true" style="icon-position:far-left;" />
+									<column id="colG" text="T-default I-center-left" width="100%"
+										sortable="true" style="icon-position:center-left;" />
+									<column id="colH" text="T-default I-top" width="100%"
+										sortable="true" style="icon-position:top;" />
+									<column id="colI" text="T-default I-bottom" width="100%"
+										sortable="true" style="icon-position:bottom;" />
+								</header>
+
+								<data>
+									<item colA="A1" colB="B1" colC="C1" colD="D1" colE="E1"
+										colF="F1" colG="G1" colH="H1" colI="I1" />
+									<item colA="A2" colB="B2" colC="C2" colD="D2" colE="E2"
+										colF="F2" colG="G2" colH="H2" colI="I2" />
+									<item colA="A3" colB="B3" colC="C3" colD="D3" colE="E3"
+										colF="F3" colG="G3" colH="H3" colI="I3" />
+									<item colA="A4" colB="B4" colC="C4" colD="D4" colE="E4"
+										colF="F4" colG="G4" colH="H4" colI="I4" />
+									<item colA="A5" colB="B5" colC="C5" colD="D5" colE="E5"
+										colF="F5" colG="G5" colH="H5" colI="I5" />
+									<item colA="A6" colB="B6" colC="C6" colD="D6" colE="E6"
+										colF="F6" colG="G6" colH="H6" colI="I6" />
+									<item colA="A7" colB="B7" colC="C7" colD="D7" colE="E7"
+										colF="F7" colG="G7" colH="H7" colI="I7" />
+								</data>
+							</tableview>
+
+							<tableview id="tv1" width="100%" height="140" contentWidth="100%">
+								<header width="100%">
+									<column id="colA" text="T-left I-right" width="100%"
+										sortable="true"
+										style="icon-position:right; text-align: left;" />
+									<column id="colB" text="T-left I-center" width="100%"
+										sortable="true"
+										style="icon-position:center; text-align: left;" />
+									<column id="colC" text="T-left I-left" width="100%"
+										sortable="true"
+										style="icon-position:left; text-align: left;" />
+									<column id="colD" text="T-left I-far-right" width="100%"
+										sortable="true"
+										style="icon-position:far-right; text-align: left;" />
+									<column id="colE" text="T-left I-center-righ" width="100%"
+										sortable="true"
+										style="icon-position:center-right; text-align: left;" />
+									<column id="colF" text="T-left I-far-left" width="100%"
+										sortable="true"
+										style="icon-position:far-left; text-align: left;" />
+									<column id="colG" text="T-left I-center-left" width="100%"
+										sortable="true"
+										style="icon-position:center-left; text-align: left;" />
+									<column id="colH" text="T-left I-top" width="100%"
+										sortable="true" style="icon-position:top; text-align: left;" />
+									<column id="colI" text="T-left I-bottom" width="100%"
+										sortable="true"
+										style="icon-position:bottom; text-align: left;" />
+								</header>
+
+								<data>
+									<item colA="A1" colB="B1" colC="C1" colD="D1" colE="E1"
+										colF="F1" colG="G1" colH="H1" colI="I1" />
+									<item colA="A2" colB="B2" colC="C2" colD="D2" colE="E2"
+										colF="F2" colG="G2" colH="H2" colI="I2" />
+									<item colA="A3" colB="B3" colC="C3" colD="D3" colE="E3"
+										colF="F3" colG="G3" colH="H3" colI="I3" />
+									<item colA="A4" colB="B4" colC="C4" colD="D4" colE="E4"
+										colF="F4" colG="G4" colH="H4" colI="I4" />
+									<item colA="A5" colB="B5" colC="C5" colD="D5" colE="E5"
+										colF="F5" colG="G5" colH="H5" colI="I5" />
+									<item colA="A6" colB="B6" colC="C6" colD="D6" colE="E6"
+										colF="F6" colG="G6" colH="H6" colI="I6" />
+									<item colA="A7" colB="B7" colC="C7" colD="D7" colE="E7"
+										colF="F7" colG="G7" colH="H7" colI="I7" />
+								</data>
+							</tableview>
+
+							<tableview id="tv1" width="100%" height="140" contentWidth="100%">
+								<header width="100%">
+									<column id="colA" text="T-center I-right" width="100%"
+										sortable="true"
+										style="icon-position:right; text-align: center;" />
+									<column id="colB" text="T-center I-center" width="100%"
+										sortable="true"
+										style="icon-position:center; text-align: center;" />
+									<column id="colC" text="T-center I-left" width="100%"
+										sortable="true"
+										style="icon-position:left; text-align: center;" />
+									<column id="colD" text="T-center I-far-right" width="100%"
+										sortable="true"
+										style="icon-position:far-right; text-align: center;" />
+									<column id="colE" text="T-center I-center-righ" width="100%"
+										sortable="true"
+										style="icon-position:center-right; text-align: center;" />
+									<column id="colF" text="T-center I-far-left" width="100%"
+										sortable="true"
+										style="icon-position:far-left; text-align: center;" />
+									<column id="colG" text="T-center I-center-left" width="100%"
+										sortable="true"
+										style="icon-position:center-left; text-align: center;" />
+									<column id="colH" text="T-center I-top" width="100%"
+										sortable="true"
+										style="icon-position:top; text-align: center;" />
+									<column id="colI" text="T-center I-bottom" width="100%"
+										sortable="true"
+										style="icon-position:bottom; text-align: center;" />
+								</header>
+
+								<data>
+									<item colA="A1" colB="B1" colC="C1" colD="D1" colE="E1"
+										colF="F1" colG="G1" colH="H1" colI="I1" />
+									<item colA="A2" colB="B2" colC="C2" colD="D2" colE="E2"
+										colF="F2" colG="G2" colH="H2" colI="I2" />
+									<item colA="A3" colB="B3" colC="C3" colD="D3" colE="E3"
+										colF="F3" colG="G3" colH="H3" colI="I3" />
+									<item colA="A4" colB="B4" colC="C4" colD="D4" colE="E4"
+										colF="F4" colG="G4" colH="H4" colI="I4" />
+									<item colA="A5" colB="B5" colC="C5" colD="D5" colE="E5"
+										colF="F5" colG="G5" colH="H5" colI="I5" />
+									<item colA="A6" colB="B6" colC="C6" colD="D6" colE="E6"
+										colF="F6" colG="G6" colH="H6" colI="I6" />
+									<item colA="A7" colB="B7" colC="C7" colD="D7" colE="E7"
+										colF="F7" colG="G7" colH="H7" colI="I7" />
+								</data>
+							</tableview>
+							<tableview id="tv1" width="100%" height="140" contentWidth="100%">
+								<header width="100%">
+									<column id="colA" text="T-right I-right" width="100%"
+										sortable="true"
+										style="icon-position:right; text-align: right;" />
+									<column id="colB" text="T-right I-center" width="100%"
+										sortable="true"
+										style="icon-position:center; text-align: right;" />
+									<column id="colC" text="T-right I-left" width="100%"
+										sortable="true"
+										style="icon-position:left; text-align: right;" />
+									<column id="colD" text="T-right I-far-right" width="100%"
+										sortable="true"
+										style="icon-position:far-right; text-align: right;" />
+									<column id="colE" text="T-right I-center-righ" width="100%"
+										sortable="true"
+										style="icon-position:center-right; text-align: right;" />
+									<column id="colF" text="T-right I-far-left" width="100%"
+										sortable="true"
+										style="icon-position:far-left; text-align: right;" />
+									<column id="colG" text="T-right I-center-left" width="100%"
+										sortable="true"
+										style="icon-position:center-left; text-align: right;" />
+									<column id="colH" text="T-right I-top" width="100%"
+										sortable="true"
+										style="icon-position:top; text-align: right;" />
+									<column id="colI" text="T-right I-bottom" width="100%"
+										sortable="true"
+										style="icon-position:bottom; text-align: right;" />
+								</header>
+
+								<data>
+									<item colA="A1" colB="B1" colC="C1" colD="D1" colE="E1"
+										colF="F1" colG="G1" colH="H1" colI="I1" />
+									<item colA="A2" colB="B2" colC="C2" colD="D2" colE="E2"
+										colF="F2" colG="G2" colH="H2" colI="I2" />
+									<item colA="A3" colB="B3" colC="C3" colD="D3" colE="E3"
+										colF="F3" colG="G3" colH="H3" colI="I3" />
+									<item colA="A4" colB="B4" colC="C4" colD="D4" colE="E4"
+										colF="F4" colG="G4" colH="H4" colI="I4" />
+									<item colA="A5" colB="B5" colC="C5" colD="D5" colE="E5"
+										colF="F5" colG="G5" colH="H5" colI="I5" />
+									<item colA="A6" colB="B6" colC="C6" colD="D6" colE="E6"
+										colF="F6" colG="G6" colH="H6" colI="I6" />
+									<item colA="A7" colB="B7" colC="C7" colD="D7" colE="E7"
+										colF="F7" colG="G7" colH="H7" colI="I7" />
+								</data>
+							</tableview>
+
+							<hbox width="100%">
+
+
+								<vbox width="100%">
+
+
+									<section-header text="dropdown" style="padding-top:16px;" />
+									<hbox width="100%">
+										<vbox width="100%">
+											<label text="TEXT - LEFT" />
+											<dropdown text="pos-default" width="100%"
+												textAlign="left" />
+											<dropdown text="right" width="100%" textAlign="left" />
+											<dropdown text="far-right" width="100%" textAlign="left" />
+											<dropdown text="center-right" width="100%"
+												textAlign="left" />
+											<dropdown text="left" width="100%" textAlign="left" />
+											<dropdown text="far-left" width="100%" textAlign="left" />
+											<dropdown text="center-left" width="100%"
+												textAlign="left" />
+											<dropdown text="top" width="100%" textAlign="left" />
+											<dropdown text="bottom" width="100%" textAlign="left" />
+										</vbox>
+										<vbox width="100%">
+											<label text="TEXT - RIGHT" />
+											<dropdown text="pos-default" width="100%"
+												textAlign="right" />
+											<dropdown text="right" width="100%" textAlign="right" />
+											<dropdown text="far-right" width="100%"
+												textAlign="right" />
+											<dropdown text="center-right" width="100%"
+												textAlign="right" />
+											<dropdown text="left" width="100%" textAlign="right" />
+											<dropdown text="far-left" width="100%" textAlign="right" />
+											<dropdown text="center-left" width="100%"
+												textAlign="right" />
+											<dropdown text="top" width="100%" textAlign="right" />
+											<dropdown text="bottom" width="100%" textAlign="right" />
+										</vbox>
+										<vbox width="100%">
+											<label text="TEXT - CENTER" />
+											<dropdown text="pos-default" width="100%"
+												textAlign="center" />
+											<dropdown text="right" width="100%" textAlign="center" />
+											<dropdown text="far-right" width="100%"
+												textAlign="center" />
+											<dropdown text="center-right" width="100%"
+												textAlign="center" />
+											<dropdown text="left" width="100%" textAlign="center" />
+											<dropdown text="far-left" width="100%"
+												textAlign="center" />
+											<dropdown text="center-left" width="100%"
+												textAlign="center" />
+											<dropdown text="top" width="100%" textAlign="center" />
+											<dropdown text="bottom" width="100%" textAlign="center" />
+										</vbox>
+										<vbox width="100%">
+											<label text="TEXT - DEFAULT" />
+											<dropdown text="pos-default" width="100%" />
+											<dropdown text="right" width="100%" />
+											<dropdown text="far-right" width="100%" />
+											<dropdown text="center-right" width="100%" />
+											<dropdown text="left" width="100%" />
+											<dropdown text="far-left" width="100%" />
+											<dropdown text="center-left" width="100%" />
+											<dropdown text="top" width="100%" />
+											<dropdown text="bottom" width="100%" />
+										</vbox>
+									</hbox>
+
+								</vbox>
+							</hbox>
+						</scrollview>
+
+					</vbox>
+
+
+					<box width="100%" height="100%"
+						style="background-color: #FFAAAA;background-opacity:.3;clip:true;">
+						<label text="Content" verticalAlign="center" horizontalAlign="center" />
+					</box>
+
+				</splitter>
+
+
+			</vbox>
+		</vbox>
+
+
+		<vbox text="Change text of the label" width="100%" height="100%">
+			<label text="Smaller" onclick="this.text='Longer text'" />
+			<label text="Smaller centered" width="200" textAlign="center" onclick="this.text='Longer text Centered'" />
+			<label text="Smaller" width="200" onclick="this.text='Longer text which may or may not be cool'" />
+		</vbox>
+
+	</tabview>
+
+</vbox>

@@ -1,7 +1,4 @@
 -cp src
---main Buttons
-
 -lib haxeui-core
-
 
 -D resourcesPath=res

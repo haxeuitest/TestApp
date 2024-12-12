@@ -1,7 +1,13 @@
 shared.hxml
-
 -lib heaps
--lib haxeui-core
 -lib haxeui-heaps
 
+--each
+
+--main Buttons
 -js build/heaps/js/Buttons.js
+
+--next
+
+--main Labels
+-js build/heaps/js/Labels.js

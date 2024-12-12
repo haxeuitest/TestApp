@@ -1762,9 +1762,9 @@
 
 
 		<vbox text="Change text of the button" width="100%" height="100%">
-            <button text="Smaller" onclick="this.text='Longer text'" />
-            <button text="Smaller" width="200" onclick="this.text='Longer text'" />
-        
+			<button text="Smaller" onclick="this.text='Longer text'" />
+			<button text="Smaller centered" width="200" textAlign="center" onclick="this.text='Longer text Centered'" />
+			<button text="Smaller" width="200" onclick="this.text='Longer text which may or may not be cool'" />
         </vbox>
 
 	</tabview>
