@@ -11,7 +11,4 @@ build/html5/*
 !build/html5/index.html
 !build/html5/js/index.modular.html
 
-pippo/*
-!pippo/pluto
-pippo/pluto/*
-!pippo/pluto/paperino.xml
+!assets
