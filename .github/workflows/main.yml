@@ -20,6 +20,7 @@ jobs:
       - run: haxelib git heaps https://github.com/HeapsIO/heaps.git
       - run: haxe html5.hxml
       - run: haxe html5.from.externs.hxml
+      - run: haxe html5.labels.from.externs.hxml
       - run: haxe html5.host.hxml
       - run: cp -a build/html5/. docs/html5/
       - run: haxe heaps-js.hxml

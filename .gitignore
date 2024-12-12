@@ -10,5 +10,6 @@ build/heaps/js/*
 build/html5/*
 !build/html5/index.html
 !build/html5/js/index.modular.html
+!build/html5/js/index.labels.html
 
 !assets
