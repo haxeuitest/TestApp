@@ -20,8 +20,8 @@ jobs:
       - run: haxelib git haxeui-nme  https://github.com/haxeui/haxeui-nme.git
       #- run: haxelib git haxeui-openfl https://github.com/haxeui/haxeui-openfl.git
       - run: haxelib git heaps https://github.com/HeapsIO/heaps.git
-      #- run: haxelib git haxeui-raylib https://github.com/haxeui/haxeui-raylib.git
-      #- run: haxelib git raylib-haxe https://github.com/haxeui/raylib-haxe.git
+      - run: haxelib git haxeui-raylib https://github.com/haxeui/haxeui-raylib.git
+      - run: haxelib git raylib-haxe https://github.com/haxeui/raylib-haxe.git
       #- run: haxelib install lime 
       #- run: haxelib install openfl 
       - run: haxelib install nme 
@@ -46,14 +46,14 @@ jobs:
       #- run: haxelib run openfl build html5 -DLabels
       #- run: cp -a build/openfl/html5/bin/. docs/openfl-js/
 
-      #- run: haxe raylib.hxml
-      #- run: cp -a build/raylib/Buttons.exe docs/raylib/Buttons.exe
-      #- run: cp -a build/raylib/Labels.exe docs/raylib/Labels.exe
+      - run: haxe raylib.hxml
+      - run: cp -a build/raylib/Buttons docs/raylib/Buttons
+      - run: cp -a build/raylib/Labels docs/raylib/Labels
 
-      - run: haxelib run nme build project.nmml windows -Dlabels
-      - run: haxelib run nme build project.nmml windows 
-      - run: cp -a build/nme/windows/Buttons/Buttons.exe docs/nme/Buttons.exe
-      - run: cp -a build/nme/windows/Labels/Labels.exe docs/nme/Labels.exe
+      - run: haxelib run nme build project.nmml linux -Dlabels
+      - run: haxelib run nme build project.nmml linux 
+      #- run: cp -a build/nme/windows/Buttons/Buttons.exe docs/nme/Buttons
+      #- run: cp -a build/nme/windows/Labels/Labels.exe docs/nme/Labels
 
       - name: Setup Pages
         uses: actions/configure-pages@v5
