@@ -20,9 +20,9 @@ jobs:
       - run: haxelib git haxeui-nme  https://github.com/haxeui/haxeui-nme.git
       - run: haxelib git haxeui-openfl https://github.com/haxeui/haxeui-openfl.git
       - run: haxelib git heaps https://github.com/HeapsIO/heaps.git
+      - run: haxelib git haxeui-raylib https://github.com/haxeui/haxeui-raylib.git
+      - run: haxelib git raylib-haxe https://github.com/haxeui/raylib-haxe.git
 
-      - run: haxelib install haxeui-raylib
-      - run: haxelib install raylib-haxe
       - run: haxelib install lime 
       - run: haxelib install openfl 
       - run: haxelib install nme 
@@ -34,6 +34,7 @@ jobs:
       - run: cp -a build/html5/. docs/html5/
       - run: haxe heaps-js.hxml
       - run: cp -a build/heaps/js/. docs/heaps-js/
+      
       - run: haxelib run openfl build html5
       - run: haxelib run openfl build html5 -DLabels
       - run: cp -a build/openfl/html5/bin/. docs/openfl-js/
@@ -41,6 +42,11 @@ jobs:
       - run: haxe raylib.hxml
       - run: cp -a build/raylib/Buttons.exe docs/raylib/Buttons.exe
       - run: cp -a build/raylib/Labels.exe docs/raylib/Labels.exe
+
+      - run: nme build project.nmml windows -Dlabels
+      - run: nme build project.nmml windows 
+      - run: cp -a build/nme/windows/Buttons/Buttons.exe docs/nme/Buttons.exe
+      - run: cp -a build/nme/windows/Labels/Labels.exe docs/nme/Labels.exe
 
       - name: Setup Pages
         uses: actions/configure-pages@v5
