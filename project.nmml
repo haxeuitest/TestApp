@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <project>
-    <meta title="Main" package="" version="1.0.0" company="" />
-    <app main="Main" file="Main" path="build/nme" />
+    <set name="target" value="Buttons" />
+    <set name="target" value="Labels" if="labels" />
+    <meta title="${target}" package="" version="1.0.0" company="" />
+    <app main="${target}" file="${target}" path="build/nme" />
 
     <window background="#FFFFFF" fps="60" />
     <window width="800" height="600" unless="mobile" />
@@ -10,7 +12,6 @@
     <source path="src" />
 
     <haxelib name="nme" />
-    <haxelib name="actuate" />
 
     <haxelib name="haxeui-core" />
     <haxelib name="haxeui-nme" />

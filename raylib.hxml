@@ -4,4 +4,10 @@ shared.hxml
 -lib haxeui-raylib
 -lib raylib-haxe
 
+--each
+-main Buttons
+-cpp build/raylib
+
+--next
+-main Labels
 -cpp build/raylib
