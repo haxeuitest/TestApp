@@ -32,7 +32,8 @@ jobs:
       - run: haxe heaps-js.hxml
       - run: cp -a build/heaps/js/. docs/heaps-js/
       - run: haxelib run openfl build html5
-      
+      - run: cp -a build/openfl/html5/bin/. docs/openfl-js/
+
       - name: Setup Pages
         uses: actions/configure-pages@v5
       - name: Upload artifact
