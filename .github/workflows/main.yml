@@ -25,6 +25,7 @@ jobs:
       #- run: haxelib install lime 
       #- run: haxelib install openfl 
       - run: haxelib install nme 
+      - run: haxelib install hxcpp
 
       - run: mkdir assets
       - run: mkdir docs/heaps-js
