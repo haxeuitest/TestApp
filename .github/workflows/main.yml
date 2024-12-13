@@ -45,9 +45,9 @@ jobs:
       #- run: haxelib run openfl build html5 -DLabels
       #- run: cp -a build/openfl/html5/bin/. docs/openfl-js/
 
-      - run: haxe raylib.hxml
-      - run: cp -a build/raylib/Buttons.exe docs/raylib/Buttons.exe
-      - run: cp -a build/raylib/Labels.exe docs/raylib/Labels.exe
+      #- run: haxe raylib.hxml
+      #- run: cp -a build/raylib/Buttons.exe docs/raylib/Buttons.exe
+      #- run: cp -a build/raylib/Labels.exe docs/raylib/Labels.exe
 
       - run: nme build project.nmml windows -Dlabels
       - run: nme build project.nmml windows 
