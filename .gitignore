@@ -12,3 +12,5 @@ build/html5/*
 !build/html5/js/index.modular.html
 !build/html5/js/index.labels.html
 
+/.haxelib/nme
+/.haxelib/hxcpp
