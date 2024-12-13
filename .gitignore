@@ -14,3 +14,4 @@ build/html5/*
 
 /.haxelib/nme
 /.haxelib/hxcpp
+/.haxelib/format

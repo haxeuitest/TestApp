@@ -21,6 +21,7 @@ jobs:
       #- run: haxelib install openfl 
       - run: haxelib install nme 
       - run: haxelib install hxcpp
+      - run: haxelib install format
 
       - run: mkdir assets
       - run: mkdir docs/heaps-js
