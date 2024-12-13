@@ -3,6 +3,7 @@
 
 -lib haxeui-core
 -lib haxeui-html5
+-lib haxeui-modular
 
 -js build/html5/Host.js
 --dce full
@@ -13,6 +14,7 @@
 --macro include('haxe.ui.containers.menus')
 --macro include('haxe.ui.containers.properties')
 -D haxeui_expose_all
+-D modular_host
 
 
 

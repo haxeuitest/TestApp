@@ -1,7 +1,9 @@
 package;
 
 import haxe.ui.containers.VBox;
+import haxe.ui.core.Component;
 import haxe.ui.events.MouseEvent;
+import modular.ModuleManager;
 
 @:xml('<vbox width="100%" height="100%">
     <hbox>
@@ -11,35 +13,30 @@ import haxe.ui.events.MouseEvent;
     
 </vbox>')
 class HostShell extends VBox {
+    
     public function new() {
-        super();        
+        super();  
+        ModuleManager.instance.subDirectory=".";//defaults to modules
+       /* ModuleManager.instance.addStartUpModule("Buttons.externs.js",(e)->{
+            loadHere.addComponent(e.createClassInstance("ButtonsView")); 
+        });
+        ModuleManager.instance.init();*/
     }
     @:bind(labels, MouseEvent.CLICK)
     function loadLabels(_){
-        loadModule("Labels.externs.js", "LabelsView");
+        ModuleManager.instance.get("Labels.externs.js", "LabelsView").then((e)->{
+            loadModule("Labels.externs.js", "LabelsView");
+        });
+        
     }
     @:bind(buttons, MouseEvent.CLICK)
     function loadButtons(_){
-        loadModule("Buttons.externs.js", "ButtonsView");
+        ModuleManager.instance.get("Buttons.externs.js", "ButtonsView").then((e)->{
+            loadModule("Buttons.externs.js", "ButtonsView");
+        });
     }
     function loadModule(path:String, comp:String){
-        var scriptEl = js.Browser.document.createScriptElement();
-        scriptEl.onload = () -> {
-            trace('Loading $comp');      
-            loadHere.removeAllComponents(true); 
-            switch  (comp){
-                case "LabelsView":
-                    loadHere.addComponent(js.Syntax.construct("LabelsView")); 
-                case "ButtonsView":
-                    loadHere.addComponent(js.Syntax.construct("ButtonsView")); 
-                case _:
-                    trace("Loading nothing");
-            }
-        }
-        scriptEl.onerror = (e) -> {
-            trace("error", e);
-        }
-        scriptEl.src = path;
-        js.Browser.document.body.appendChild(scriptEl);
+        loadHere.removeAllComponents(true); 
+        loadHere.addComponent( ModuleManager.instance.find(path).createClassInstance(comp) );
     }
 }
