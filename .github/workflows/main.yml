@@ -22,10 +22,16 @@ jobs:
       - run: haxelib git heaps https://github.com/HeapsIO/heaps.git
       - run: haxelib git haxeui-raylib https://github.com/haxeui/haxeui-raylib.git
       - run: haxelib git raylib-haxe https://github.com/haxeui/raylib-haxe.git
-
       - run: haxelib install lime 
       - run: haxelib install openfl 
       - run: haxelib install nme 
+
+      - run: mkdir assets
+      - run: mkdir docs/heaps-js
+      - run: mkdir docs/html5
+      - run: mkdir docs/nme
+      - run: mkdir docs/openfl-js
+      - run: mkdir docs/raylib
 
       - run: haxe html5.hxml
       - run: haxe html5.buttons.from.externs.hxml
@@ -34,7 +40,7 @@ jobs:
       - run: cp -a build/html5/. docs/html5/
       - run: haxe heaps-js.hxml
       - run: cp -a build/heaps/js/. docs/heaps-js/
-      
+
       - run: haxelib run openfl build html5
       - run: haxelib run openfl build html5 -DLabels
       - run: cp -a build/openfl/html5/bin/. docs/openfl-js/
