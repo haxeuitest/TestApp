@@ -41,9 +41,9 @@ jobs:
       - run: haxe heaps-js.hxml
       - run: cp -a build/heaps/js/. docs/heaps-js/
 
-      - run: haxelib run openfl build html5
-      - run: haxelib run openfl build html5 -DLabels
-      - run: cp -a build/openfl/html5/bin/. docs/openfl-js/
+      #- run: haxelib run openfl build html5
+      #- run: haxelib run openfl build html5 -DLabels
+      #- run: cp -a build/openfl/html5/bin/. docs/openfl-js/
 
       - run: haxe raylib.hxml
       - run: cp -a build/raylib/Buttons.exe docs/raylib/Buttons.exe
