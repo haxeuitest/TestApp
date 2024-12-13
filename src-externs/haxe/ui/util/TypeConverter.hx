@@ -51,7 +51,7 @@ class TypeConverter {
                 return r;
             case "color":
                 return Color.fromString(Std.string(input));
-            case "variant" | "dynamic" | "scalemode" | "selectionmode" | "scrollpolicy" | "scrollmode":
+            case "variant" | "haxe.ui.util.variant" | "dynamic" | "scalemode" | "selectionmode" | "scrollpolicy" | "scrollmode":
                 return input;
             case _:
                 #if debug
