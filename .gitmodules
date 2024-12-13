@@ -1,0 +1,24 @@
+[submodule ".haxelib/haxeui-core/git"]
+	path = .haxelib/haxeui-core/git
+	url = https://github.com/haxeui/haxeui-core.git
+[submodule ".haxelib/haxeui-heaps/git"]
+	path = .haxelib/haxeui-heaps/git
+	url = https://github.com/haxeui/haxeui-heaps.git
+[submodule ".haxelib/haxeui-html5/git"]
+	path = .haxelib/haxeui-html5/git
+	url = https://github.com/haxeui/haxeui-html5.git
+[submodule ".haxelib/haxeui-nme/git"]
+	path = .haxelib/haxeui-nme/git
+	url = https://github.com/haxeui/haxeui-nme.git
+[submodule ".haxelib/haxeui-modular/git"]
+	path = .haxelib/haxeui-modular/git
+	url = https://github.com/core-haxe/modular.git
+[submodule ".haxelib/heaps/git"]
+	path = .haxelib/heaps/git
+	url = https://github.com/HeapsIO/heaps.git
+[submodule ".haxelib/logging/git"]
+	path = .haxelib/logging/git
+	url = https://github.com/core-haxe/logging.git
+[submodule ".haxelib/promises/git"]
+	path = .haxelib/promises/git
+	url = https://github.com/core-haxe/promises.git
