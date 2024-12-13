@@ -14,8 +14,10 @@ jobs:
         uses: krdlab/setup-haxe@v1
         with:
           haxe-version: 4.3.6
+      
+      - run: haxelib git promises https://github.com/core-haxe/promises.git
       - run: haxelib git haxeui-core https://github.com/haxeui/haxeui-core.git
-      - run: haxelib git haxeui-modular https://github.com/core-haxe/modular.git
+      
       - run: haxelib git haxeui-html5 https://github.com/haxeui/haxeui-html5.git
       - run: haxelib git haxeui-heaps https://github.com/haxeui/haxeui-heaps.git
       - run: haxelib git haxeui-nme  https://github.com/haxeui/haxeui-nme.git
