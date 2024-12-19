@@ -10,10 +10,10 @@ typedef OpenFileDialogOptions = {
 }
 
 extern class OpenFileDialogBase {
-    public function new(?options:Null<OpenFileDialogOptions>, ?callback:Null<(haxe.ui.containers.dialogs.DialogButton, Array<haxe.ui.containers.dialogs.SelectedFileInfo>) -> Void>):Void;
+    public function new(?options:Null<OpenFileDialogOptions>, ?callback:Null<(haxe.ui.containers.dialogs.Dialog.DialogButton, Array<haxe.ui.containers.dialogs.Dialogs.SelectedFileInfo>) -> Void>):Void;
     public var selectedFiles:Array<haxe.ui.containers.dialogs.Dialogs.SelectedFileInfo>;
-    public var callback:(haxe.ui.containers.dialogs.DialogButton, Array<haxe.ui.containers.dialogs.SelectedFileInfo>) -> Void;
-    public var onDialogClosed:haxe.ui.containers.dialogs.DialogEvent -> Void;
+    public var callback:(haxe.ui.containers.dialogs.Dialog.DialogButton, Array<haxe.ui.containers.dialogs.Dialogs.SelectedFileInfo>) -> Void;
+    public var onDialogClosed:haxe.ui.containers.dialogs.Dialog.DialogEvent -> Void;
     public var options(get, set):OpenFileDialogOptions;
     private function get_options():OpenFileDialogOptions;
     private function set_options(value:OpenFileDialogOptions):OpenFileDialogOptions;

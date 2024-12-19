@@ -41,7 +41,7 @@ extern class Component extends haxe.ui.backend.ComponentImpl implements haxe.ui.
     private function destroyComponent():Void;
     private function onDestroy():Void;
     public function walkComponents(callback:haxe.ui.core.Component -> Bool):Void;
-    public function removeAllComponents(?dispose:Bool):Void;
+    public function removeAllComponents(dispose:Bool=true):Void;
     private function matchesSearch<T>(?criteria:Null<String>, ?type:Null<Class<T>>, ?searchType:String):Bool;
     public function findComponent<T>(?criteria:Null<String>, ?type:Null<Class<T>>, ?recursive:Null<Bool>, ?searchType:String):Null<T>;
     public function findComponents<T>(?styleName:Null<String>, ?type:Null<Class<T>>, ?maxDepth:Int):Array<T>;

@@ -11,7 +11,7 @@ extern class FocusManager extends haxe.ui.backend.FocusManagerImpl {
     private function hasFocusableItem(view:haxe.ui.core.Component):Bool;
     private function focusOnFirstInteractive(view:haxe.ui.core.Component):haxe.ui.focus.IFocusable;
     public function removeView(view:haxe.ui.core.Component):Void;
-    public var focus(get, set):haxe.ui.IFocusable;
+    public var focus(get, set):haxe.ui.focus.IFocusable;
     private function get_focus():haxe.ui.focus.IFocusable;
     private function set_focus(value:haxe.ui.focus.IFocusable):haxe.ui.focus.IFocusable;
     public function focusNext():haxe.ui.core.Component;

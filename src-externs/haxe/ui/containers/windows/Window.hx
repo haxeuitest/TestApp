@@ -14,7 +14,7 @@ extern class Window extends haxe.ui.containers.VBox implements haxe.ui.extension
     private function validateWindow(fn:Bool -> Void):Void;
     public function set_width(value:Null<Float>):Null<Float>;
     public function set_height(value:Null<Float>):Null<Float>;
-    public function messageBox(message:String, ?title:Null<String>, ?type:Null<haxe.ui.containers.dialogs.MessageBox.MessageBoxType>, ?modal:Bool, ?callback:Null<haxe.ui.containers.dialogs.DialogButton -> Void>):haxe.ui.containers.dialogs.Dialog;
+    public function messageBox(message:String, ?title:Null<String>, ?type:Null<haxe.ui.containers.dialogs.MessageBox.MessageBoxType>, ?modal:Bool, ?callback:Null<haxe.ui.containers.dialogs.Dialog.DialogButton -> Void>):haxe.ui.containers.dialogs.Dialog;
     public var draggable(get, set):Bool;
     private function get_draggable():Bool;
     private function set_draggable(value:Bool):Bool;

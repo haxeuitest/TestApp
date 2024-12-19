@@ -30,12 +30,12 @@ extern class FileDialogTypes {
 }
 
 extern class Dialogs {
-    public static function messageBox(message:String, ?title:Null<String>, ?type:Null<haxe.ui.containers.dialogs.MessageBox.MessageBoxType>, ?modal:Bool, ?callback:Null<haxe.ui.containers.dialogs.DialogButton -> Void>):haxe.ui.containers.dialogs.Dialog;
-    public static function dialog(contents:haxe.ui.core.Component, ?title:Null<String>, ?buttons:Null<haxe.ui.containers.dialogs.Dialog.DialogButton>, ?modal:Bool, ?callback:Null<haxe.ui.containers.dialogs.DialogButton -> Void>):haxe.ui.containers.dialogs.Dialog;
-    public static function openFile(callback:(haxe.ui.containers.dialogs.DialogButton, Array<haxe.ui.containers.dialogs.SelectedFileInfo>) -> Void, ?options:Null<haxe.ui.backend.OpenFileDialogBase.OpenFileDialogOptions>):Void;
-    public static function openBinaryFile(?title:Null<String>, ?fileTypes:Null<Array<FileDialogExtensionInfo>>, callback:haxe.ui.containers.dialogs.SelectedFileInfo -> Void):Void;
-    public static function openTextFile(?title:Null<String>, ?fileTypes:Null<Array<FileDialogExtensionInfo>>, callback:haxe.ui.containers.dialogs.SelectedFileInfo -> Void):Void;
-    public static function saveFile(callback:(haxe.ui.containers.dialogs.DialogButton, Bool, String) -> Void, fileInfo:FileInfo, ?options:Null<haxe.ui.backend.SaveFileDialogBase.SaveFileDialogOptions>):Void;
+    public static function messageBox(message:String, ?title:Null<String>, ?type:Null<haxe.ui.containers.dialogs.MessageBox.MessageBoxType>, ?modal:Bool, ?callback:Null<haxe.ui.containers.dialogs.Dialog.DialogButton -> Void>):haxe.ui.containers.dialogs.Dialog;
+    public static function dialog(contents:haxe.ui.core.Component, ?title:Null<String>, ?buttons:Null<haxe.ui.containers.dialogs.Dialog.DialogButton>, ?modal:Bool, ?callback:Null<haxe.ui.containers.dialogs.Dialog.DialogButton -> Void>):haxe.ui.containers.dialogs.Dialog;
+    public static function openFile(callback:(haxe.ui.containers.dialogs.Dialog.DialogButton, Array<haxe.ui.containers.dialogs.Dialogs.SelectedFileInfo>) -> Void, ?options:Null<haxe.ui.backend.OpenFileDialogBase.OpenFileDialogOptions>):Void;
+    public static function openBinaryFile(?title:Null<String>, ?fileTypes:Null<Array<FileDialogExtensionInfo>>, callback:haxe.ui.containers.dialogs.Dialogs.SelectedFileInfo -> Void):Void;
+    public static function openTextFile(?title:Null<String>, ?fileTypes:Null<Array<FileDialogExtensionInfo>>, callback:haxe.ui.containers.dialogs.Dialogs.SelectedFileInfo -> Void):Void;
+    public static function saveFile(callback:(haxe.ui.containers.dialogs.Dialog.DialogButton, Bool, String) -> Void, fileInfo:FileInfo, ?options:Null<haxe.ui.backend.SaveFileDialogBase.SaveFileDialogOptions>):Void;
     public static function saveBinaryFile(?title:Null<String>, ?fileTypes:Null<Array<FileDialogExtensionInfo>>, fileInfo:FileInfo, callback:(Bool, String) -> Void):Void;
     public static function saveTextFile(?title:Null<String>, ?fileTypes:Null<Array<FileDialogExtensionInfo>>, fileInfo:FileInfo, callback:(Bool, String) -> Void):Void;
 }
