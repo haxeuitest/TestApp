@@ -10,6 +10,8 @@
 
     <!-- classpath, haxe libs -->
     <source path="src" />
+    
+    <haxeflag name="-D" value="NME_NO_AUDIO"/>
 
     <haxelib name="nme" />
 

@@ -3,10 +3,12 @@ package;
 import haxe.ui.containers.VBox;
 import haxe.ui.core.Component;
 import haxe.ui.events.MouseEvent;
+import modular.ModuleLoader;
 import modular.ModuleManager;
 
 @:xml('<vbox width="100%" height="100%">
     <hbox>
+        
         <button text="buttons" id="buttons"/><button text="labels" id="labels"/>
     </hbox>
     <vbox id="loadHere" width="100%" height="100%"/>
@@ -24,6 +26,10 @@ class HostShell extends VBox {
     }
     @:bind(labels, MouseEvent.CLICK)
     function loadLabels(_){
+        /*var t:ModuleLoader;
+        t.load("Labels.externs.js").then((e)->{
+            e.createClassInstance("Labels.externs.js", "LabelsView");
+        });*/
         ModuleManager.instance.get("Labels.externs.js", "LabelsView").then((e)->{
             loadModule("Labels.externs.js", "LabelsView");
         });
