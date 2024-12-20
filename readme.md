@@ -18,22 +18,18 @@ I used
 
 I then had to adjust
 1. Change haxe.ui.backend.ComponentBase.hx line 8 by changing  
-```
-extern class ComponentBase extends haxe.ui.backend.ComponentSurface implements haxe.ui.core.IComponentContainer implements haxe.ui.core.IEventDispatcher implements haxe.ui.core.IClonable<haxe.ui.backend.ComponentBase> {  
-```
-to  
-```
-extern class ComponentBase extends haxe.ui.backend.ComponentSurface implements haxe.ui.core.IComponentContainer implements haxe.ui.core.  IEventDispatcher<haxe.ui.events.UIEvent> implements haxe.ui.core.IClonable<haxe.ui.backend.ComponentBase> {  
-```
+```extern class ComponentBase extends haxe.ui.backend.ComponentSurface implements haxe.ui.core.IComponentContainer implements haxe.ui.core.IEventDispatcher implements haxe.ui.core.IClonable<haxe.ui.backend.ComponentBase> {  ```  
+to   
+```extern class ComponentBase extends haxe.ui.backend.ComponentSurface implements haxe.ui.core.IComponentContainer implements haxe.ui.core.  IEventDispatcher<haxe.ui.events.UIEvent> implements haxe.ui.core.IClonable<haxe.ui.backend.ComponentBase> {  ```
 
 2. copied haxe.ui.util.Color from git over extern
 3. copied haxe.ui.validators.Validators.hx from git over extern
 
-4. Changed text globally in externs from:
+4. Changed text globally in externs from:  
+
 ```haxe.ui.containers.dialogs.DialogButton``` to ```haxe.ui.containers.dialogs.Dialog.DialogButton```
 
-```haxe.ui.containers.dialogs.SelectedFileInfo``` to
-```haxe.ui.containers.dialogs.Dialogs.SelectedFileInfo```
+```haxe.ui.containers.dialogs.SelectedFileInfo``` to ```haxe.ui.containers.dialogs.Dialogs.SelectedFileInfo```
 
 ```haxe.ui.containers.dialogs.DialogEvent``` to ```haxe.ui.containers.dialogs.Dialog.DialogEvent```
 
