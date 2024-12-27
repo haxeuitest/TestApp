@@ -39,7 +39,7 @@ to
 6. IDataItem needs line 3 added from source
 ```@:autoBuild(haxe.ui.macros.Macros.buildData())```
 
-7.added to ui.core.TextDisplayImpl and to ui.core.ComponentImpl
+7. Added to ui.core.TextDisplayImpl and to ui.core.ComponentImpl
 ```public var element:js.html.Element;```
 
 The only warning left was haxe/ui/components/Spinner.hx:6: characters 5-44 : Warning : (WExternWithExpr) Extern non-inline function may not have an expression
